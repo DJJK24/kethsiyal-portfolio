@@ -16,7 +16,7 @@ function Blog() {
 
       <nav className="hero-section">
         <h5>Hey, I'M</h5>
-        <h1>DJ.KETHSIYAL</h1>
+        <h1>DJ...JK</h1>
         <p className="styled-paragraph">A frontend-focused Web Developer building the frontend of <br/> Websites & Web Applications that lead to the success of overall projects.</p>
       </nav>
     </div>
