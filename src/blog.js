@@ -10,7 +10,6 @@ function Blog() {
           <li className="menu-item"><button className="nav-button fancy-button">About</button></li>
           <li className="menu-item"><button className="nav-button fancy-button">Projects</button></li>
           <li className="menu-item"><button className="nav-button fancy-button">Contact</button></li>
-          <li className="menu-item"><button className="nav-button fancy-button">Blog</button></li>
         </ul>
       </nav>
 
