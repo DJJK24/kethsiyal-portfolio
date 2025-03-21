@@ -1,0 +1,18 @@
+#gradient {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    background: linear-gradient(45deg, #1e3c72, #2a5298, #00c6ff);
+    background-size: 400% 400%;
+    animation: gradientAnimation 8s infinite linear;
+  }
+  
+  @keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  

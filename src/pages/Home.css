@@ -1,0 +1,67 @@
+/* Ensure full viewport coverage */
+.home {
+  height: 100vh;
+  display: flex;
+  justify-content: center;  /* Horizontal centering */
+  align-items: center;       /* Vertical centering */
+  text-align: center;
+  color: white;
+  background: linear-gradient(45deg, #1e3c72, #2a5298, #00c6ff);
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Center the content */
+.home-content {
+  max-width: 800px;
+  width: 100%;
+}
+
+/* Title styling */
+.home-title {
+  font-size: 4rem;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+/* Subtitle with typing effect */
+.home-subtitle {
+  font-size: 1.5rem;
+  border-right: 2px solid white;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+  animation: typing 3s steps(40, end) forwards, blink 1s infinite;
+}
+
+/* Typing animation */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* Cursor blinking */
+@keyframes blink {
+  50% { border-color: transparent }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .home-title {
+    font-size: 3rem;
+  }
+  
+  .home-subtitle {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-title {
+    font-size: 2.5rem;
+  }
+  
+  .home-subtitle {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,65 @@
+/* Footer Styles */
+.footer {
+    /* background: #0d1b2a;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 0%; */
+    background: #0d1b2a;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .footer p {
+    margin: 0;
+    font-size: 1rem;
+  }
+  
+  .social-links {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .social-links a {
+    color: white;
+    font-size: 1.5rem;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .social-links a:hover {
+    color: #00b4d8;
+    transform: scale(1.1);
+  }
+  
+  /* Ensure the body takes full height */
+  html, body {
+    height: 100%;
+    margin: 0;
+  }
+  
+  /* Ensure the main content expands to push the footer down */
+  #root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .content {
+    flex: 1; /* Pushes the footer down */
+  }
+  
