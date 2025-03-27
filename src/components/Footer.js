@@ -8,16 +8,16 @@ const Footer = () => {
       <div className="footer-content">
         <p>© {new Date().getFullYear()} DJJK | All Rights Reserved</p>
         <div className="social-links">
-        <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.youtube.com/@DJonlyforchrist" target="_blank" rel="noopener noreferrer">
             <FaYoutube />
         </a>
           <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
             <FaInstagram />
           </a>
-          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.linkedin.com/in/jebishakethsiyaldj07/" target="_blank" rel="noopener noreferrer">
             <FaLinkedin />
           </a>
-          <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/DJJK24/kethsiyal-portfolio" target="_blank" rel="noopener noreferrer">
             <FaGithub />
           </a>
         </div>

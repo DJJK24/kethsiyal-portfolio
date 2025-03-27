@@ -1,3 +1,4 @@
+
 /* Ensure full viewport coverage */
 .home {
   height: 100vh;
@@ -8,7 +9,7 @@
   color: white;
   background: linear-gradient(45deg, #1e3c72, #2a5298, #00c6ff);
   padding: 20px;
-  box-sizing: border-box;
+ box-sizing: border-box;
 }
 
 /* Center the content */

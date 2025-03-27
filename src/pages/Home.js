@@ -15,12 +15,10 @@ const Home = () => {
         transition={{ duration: 1 }}
       >
         <h1 className="home-title">Welcome to My Portfolio</h1>
-        <p className="home-subtitle">I'm Kethsi — a Frontend-Focused Web Developer.</p>
+        <p className="home-subtitle">I'm Kethsiyal — a Frontend-Focused Web Developer.</p>
       </motion.div>
     </section>
   );
 };
 
 export default Home;
-
-

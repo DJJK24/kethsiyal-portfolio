@@ -2,42 +2,57 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   padding: 200px 20px;
-  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  background: linear-gradient(45deg, #1e3c72, #2a5298, #00c6ff);
   color: white;
   text-align: center;
   align-items: center;
-  /* min-height: 100vh;  */
+  min-height: 100vh;
   padding: 20px;
+  box-sizing: border-box;
+  
 }
 
 .about-container {
+  padding: 10px;
   display: flex;
+  /* min-height: 100vh; */
   align-items: center;
   gap: 50px;
   justify-content: center;
 }
 
-.about-image img {
+.about-image {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-pic {
   width: 200px;
   height: 200px;
   border-radius: 50%;
   object-fit: cover;
-  border: 4px solid #0077b6;
+  border: 4px solid #30b7ffa3;
+  cursor: pointer;
   transition: transform 0.3s ease;
+  box-shadow: 0 4px 10px rgba(239, 232, 252, 0.2);
 }
 
-.about-image img:hover {
+.profile-pic:hover {
   transform: scale(1.1);
 }
+
 
 .about-content {
   max-width: 600px;
 }
 
 .skills-list {
+  margin-top: 40px;
   list-style: none;
   padding: 0;
 }
@@ -45,11 +60,50 @@
 .skills-list li {
   background: #0077b6;
   color: white;
-  padding: 10px;
+  padding: 10px 15px;
   margin: 5px;
   display: inline-block;
   border-radius: 5px;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+  /* transition: all 0.3s ease-in-out; */
+  box-shadow: 0 0 5px #0077b6, 0 0 10px #0077b6;
 }
+
+.skills-list li:hover {
+  /* transform: scale(1.1); */
+  box-shadow: 0 0 10px #33acce, 0 0 20px   #5cc4e0, 0 0 30px #00C6FF;
+  background: #00C6FF;
+}
+
+.resume-section {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.resume-section h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+
+}
+
+.resume-button {
+  display: inline-block;
+  padding: 12px 20px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.resume-button:hover {
+  background-color:  #54ddff;
+}
+
 
 /* Responsive Styles */
 @media (max-width: 768px) {
@@ -61,10 +115,54 @@
   .about-image img {
     width: 150px;
     height: 150px;
+    position: relative;
+    top: 75px;
+  }
+
+  /* Responsive Resume Section */
+  .resume-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+  }
+
+  .resume-section h3 {
+    font-size: 1.3rem; /* Slightly smaller font size */
+    margin-bottom: 8px;
+  }
+
+  .resume-button {
+    padding: 10px 18px;
+    font-size: 1rem;
+    width: 80%; /* Makes it responsive */
+    text-align: center;
   }
 }
 
-.about-page {
-  min-height: 70vh; /* Adjust this value to fit your design */
-  padding: 20px;
+/* General Resume Styles */
+.resume-section {
+  margin-top: 20px;
+  text-align: center;
 }
+
+.resume-section h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.resume-button {
+  display: inline-block;
+  padding: 12px 20px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.resume-button:hover {
+  background-color: #54ddff;
+}
+

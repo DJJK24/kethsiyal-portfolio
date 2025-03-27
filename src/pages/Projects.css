@@ -1,68 +1,86 @@
 .projects {
-  padding: 200px 20px;
-  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  padding: 100px 20px;
+  background: linear-gradient(45deg, #1e3c72, #2a5298, #00c6ff);
   color: white;
   text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+  min-height: 120vh;
+
 }
 
 .projects h2 {
+  position: relative;
+  top: 25px;
   font-size: 2.5rem;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
+  font-weight: bold;
 }
 
+/* Project List */
 .project-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 35px;
   justify-content: center;
 }
 
+/* Project Card */
 .project-card {
-  background: #ffffff10;
-  border: 1px solid #ffffff30;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   padding: 20px;
-  border-radius: 10px;
+  border-radius: 12px;
   width: 100%;
   max-width: 350px;
-  transition: transform 0.3s ease-in-out;
+  text-align: center;
+  transition: box-shadow 0.3s ease-in-out;
 }
 
+/* Soft Glow on Hover */
 .project-card:hover {
-  transform: translateY(-10px);
+  box-shadow: 0 0 15px rgba(0, 198, 255, 0.6);
 }
 
+/* Title */
 .project-card h3 {
   font-size: 1.8rem;
+  font-weight: bold;
 }
 
+/* Description */
 .project-card p {
   font-size: 1rem;
   line-height: 1.6;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+/* Icon Styling */
+.project-icons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.icon {
+  font-size: 1.8rem;
+  color: white;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.icon:hover {
+  transform: scale(1.2);
+  color: #00c6ff;
 }
 
 /* Responsive Design */
-@media (max-width: 1024px) {
-  .projects h2 {
-    font-size: 2rem;
-  }
-}
-
 @media (max-width: 768px) {
   .projects {
-    padding: 30px;
+    padding: 50px 20px;
   }
-
   .project-card {
-    width: 100%;
-  }
-}
-
-@media (max-width: 480px) {
-  .projects h2 {
-    font-size: 1.5rem;
-  }
-
-  .project-card {
-    padding: 15px;
+    width: 90%;
   }
 }

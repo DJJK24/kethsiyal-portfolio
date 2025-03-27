@@ -1,7 +1,6 @@
-/* Navbar Styling */
 nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   padding: 15px 20px;
   background: rgba(0, 0, 0, 0.8);
@@ -10,14 +9,12 @@ nav {
   width: 100%;
   z-index: 10;
 }
-
 /* Navigation Links */
 .nav-links {
   display: flex;
   gap: 20px;
   list-style: none;
 }
-
 nav a {
   text-decoration: none;
   color: white;
@@ -25,13 +22,11 @@ nav a {
   padding: 10px 15px;
   transition: all 0.3s ease;
 }
-
 nav a:hover {
-  background: #00c6ff;
+  background: #00C6FF;
   border-radius: 5px;
   transform: scale(1.1);
 }
-
 /* Hamburger Menu - Hidden by Default */
 .hamburger {
   display: none;
@@ -39,7 +34,6 @@ nav a:hover {
   color: white;
   cursor: pointer;
 }
-
 /* Responsive Navbar */
 @media (max-width: 768px) {
   .nav-links {
@@ -53,12 +47,15 @@ nav a:hover {
     padding: 20px;
     text-align: center;
   }
-
   .nav-links.active {
     display: flex;
   }
-
   .hamburger {
     display: block;
   }
 }
+
+
+
+
+

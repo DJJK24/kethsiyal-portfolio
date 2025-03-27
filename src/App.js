@@ -1,29 +1,30 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Home from "./pages/Home";  // Must match `Home.js` exactly
-import About from "./pages/About"; 
-import Projects from "./pages/Projects"; 
-import Blog from "./pages/Blog"; 
-import Contact from "./pages/Contact"; 
-import Navbar from "./components/Navbar"; 
-import Footer from "./components/Footer"; 
-
+import Home from "./pages/home";  
+import About from "./pages/About";
+import Projects from "./pages/Projects";
+// import Blog from "./pages/Blog";
+import Contact from "./pages/Contact";
+import Education from "./pages/Education";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 import "./App.css";
 
 function App() {
   return (
     <Router>
+      <Navbar />
       <div className="app">
-        <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/projects" element={<Projects />} />
-          <Route path="/blog" element={<Blog />} />
+          {/* <Route path="/blog" element={<Blog />} /> */}
           <Route path="/contact" element={<Contact />} />
+          <Route path="/education" element={<Education />} />
         </Routes>
-        <Footer />
       </div>
+      <Footer />
     </Router>
   );
 }

@@ -5,7 +5,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(45deg, rgb(157, 182, 255), rgb(246, 120, 147));
+  background: linear-gradient(45deg, #1e3c72, #2a5298, #00c6ff);
   background-size: 300% 300%;
   animation: gradientAnimation 6s ease infinite;
 }
@@ -31,7 +31,7 @@
   align-items: center;
   background-color: #041b4a;
   padding: 1rem 2rem;
-  color: white;
+  color: rgb(253, 253, 253);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 
   /* Fix the navbar at the top */
